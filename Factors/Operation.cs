@@ -26,7 +26,7 @@ namespace Factors
             {
                 throw new Exception("i no puede ser 0");
             }
-            return A*(Math.Pow(1+i,n)/i);
+            return A*((Math.Pow(1+i,n)-1)/i);
         }
         public double factorA_F(double F,float i, int n)
         {
@@ -62,15 +62,15 @@ namespace Factors
             }
             return G*((Math.Pow(i+1,n)-i*n-1)/(Math.Pow(i,2)*Math.Pow(i+1,n)));
         }
-        public double factorA_G(double G, float i, int n)
+        public double factorA_G(double G, float i, int n) //ok
         {
             if (i == 0)
             {
                 throw new Exception("i no puede ser 0");
             }
-            return G*((Math.Pow(i+i,n)-i*n-1)/(i*(Math.Pow(i+1,n)-1)));
+            return G*((Math.Pow(1+i,n)-i*n-1)/(i*(Math.Pow(i+1,n)-1)));
         }
-        public double factorP_A1(double A1, float g,float i, int n)
+        public double factorP_A1(double A1, float g,float i, int n) //ok
         {
             if (i == 0)
             {
@@ -87,7 +87,7 @@ namespace Factors
             }
             else
             {
-                return A1 * ((1 - Math.Pow(i + g, n) * Math.Pow(i + 1, -1 * n)) / (i - g));
+                return A1 * ((1 - Math.Pow(1 + g, n) * Math.Pow(i + 1, -1 * n)) / (i - g));
             }            
         }
 

@@ -36,8 +36,9 @@ namespace Factors
             string mensaje = "" +
                 "Esta herramienta fue desarrollada por estudiantes\n" +
                 "de Ingeniería de Sistemas en el curso de ingeniería\n" +
-                "económica en la Universidad Nacional de Trujillo - VJ,\n" +
-                "para facilitar la tarea de calcular factores de pago.\n" +
+                "económica y financiera en la Universidad Nacional de\n" +
+                "Trujillo - VJ, para facilitar la tarea de calcular\n" +
+                "factores de pago.\n" +
                 "\n" +
                 "Docente: Mg.POEMAPE ROJAS,GLORIA IRENE \n" +
                 "\n" +
@@ -344,6 +345,11 @@ namespace Factors
                     MessageBox.Show(E.Message);
                 }
             }
+
+        }
+
+        private void Form_Load(object sender, EventArgs e)
+        {
 
         }
     }

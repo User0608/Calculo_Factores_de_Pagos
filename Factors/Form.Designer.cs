@@ -1113,6 +1113,7 @@
             this.MainMenuStrip = this.Menu;
             this.Name = "Form";
             this.Text = "Factores";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
